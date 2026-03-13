@@ -4,7 +4,13 @@ $$-\Delta u + V(x)u = \lambda u$$. This includes treatment of the harmonic case 
 for the Laplacian. 
 
 ### 1. Features
-* **Operator Support:** Handles a diverse class of potentials $V(x)$:
+* **Tools for Harmonic Analyiss** (constantly adding new):
+   * Symbolic calculus for balls in $\mathbb{R}^n$, for integration over balls and spheres.
+   * Computations of bases for spaces of spherical harmonics $\mathbb{R}^n$
+   * Solutions of the Dirilecht problem over balls, ellipsoids and annular domains.
+   * Computations of harmonic conjugates in $\mathbb{R}^2$.
+
+* **Operator Support:** Handling of a diverse class of potentials $V(x)$:
     * Analytic: Free, Harmonic (Confining), Coulomb, Radial.
     * Singular/Rough: Magnetic potentials, and potentials with local singularities.
 * **Quantitative information:** 
