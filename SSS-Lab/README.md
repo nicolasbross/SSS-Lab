@@ -1,6 +1,7 @@
 ## Overview
-The goal of this framework is to provide a Terminal User Interface for analyzing elliptic operators of the form:
-$$-\Delta u + V(x)u = \lambda u$$. This includes treatment of the harmonic case $$-\Delta u = 0 $$ and its respective eigenvalue problem. 
+The goal of this framework is to provide a Terminal User Interface for analyzing elliptic operators of the form
+$$-\Delta u + V(x)u = \lambda u$$. This includes treatment of the harmonic case $$-\Delta u = 0 $$ and the respective eigenvalue problem 
+for the Laplacian. 
 
 ### 1. Features
 * **Operator Support:** Handles a diverse class of potentials $V(x)$:
@@ -8,7 +9,8 @@ $$-\Delta u + V(x)u = \lambda u$$. This includes treatment of the harmonic case 
     * Singular/Rough: Magnetic potentials, and potentials with local singularities.
 * **Quantitative information:** 
 * Sampling of frequency functions and doubling indices.
-* **Localization Measures:** Entropy-based localization and spectral gaps.
+* **Localization Measures:**
+* Entropy-based localization and spectral gaps.
 
 ### 2. Design Goals
 * Support explicit finite difference schemes and FEM-like weak formulations. Decouple the discretization layer from the solver logic, allowing for custom stencils.
