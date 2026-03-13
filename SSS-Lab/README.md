@@ -1,16 +1,13 @@
 ## Overview
-The goal of this framework provides is to provide a rigorous numerical environment for analyzing elliptic operators of the form:
-$$-\Delta u + V(x)u = \lambda u$$
+The goal of this framework is to provide a Terminal User Interface for analyzing elliptic operators of the form:
+$$-\Delta u + V(x)u = \lambda u$$. This includes treatment of the harmonic case $$-\Delta u = 0 $$ and its respective eigenvalue problem. 
 
-## Key Features
-
-### 1. 
+### 1. Features
 * **Operator Support:** Handles a diverse class of potentials $V(x)$:
     * Analytic: Free, Harmonic (Confining), Coulomb, Radial.
     * Singular/Rough: Magnetic potentials, and potentials with local singularities.
 * **Quantitative information:** 
-* $\|u\|_{W^{k,p}}$ and $[u]_{C^{0,\alpha}}$ estimates.
-* Sampling of frequency functions and doubling indices for unique continuation quantification.
+* Sampling of frequency functions and doubling indices.
 * **Localization Measures:** Entropy-based localization and spectral gaps.
 
 ### 2. Design Goals
