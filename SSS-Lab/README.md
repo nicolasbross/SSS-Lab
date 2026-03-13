@@ -25,15 +25,37 @@ for the Laplacian.
 
 ## Project Structure
 
-├── include/           # Header-only interfaces and template definitions
-│   ├── operators/     # Abstract base classes for Elliptic Operators
-│   ├── geometry/      # Grid and domain discretizations
-│   └── analysis/      # Other related computations.
-├── src/               # Compiled source implementations
-│   ├── core/          # Solver logic and Eigen wrappers
-│   └── binding/       # Lua bindings and API exposure
-├── scripts/           # Lua and Bash scripts for experiment workflows
-└── tests/             # Unit tests for convergence 
+```
+SSSLabs/
+├── include/            # Header-only interfaces and template definitions
+│   ├── operators/      # Abstract base classes for elliptic operators
+│   ├── geometry/       # Grid and domain discretizations
+│   ├── analysis/       # Mathematical analysis utilities
+│   │   └── harmonic/   # Harmonic analysis module (Laplacian tools)
+│   │       ├── spherical_harmonics.hpp
+│   │       ├── dirichlet_ball.hpp
+│   │       ├── neumann_ball.hpp
+│   │       └── kelvin_transform.hpp
+│
+├── src/                # Compiled implementations
+│   ├── core/           # Numerical solvers and linear algebra
+│   │   └── harmonic/
+│   │       ├── spherical_harmonics.cpp
+│   │       ├── dirichlet_ball.cpp
+│   │       ├── neumann_ball.cpp
+│   │       └── kelvin_transform.cpp
+│   │
+│   └── binding/        # Lua bindings and API exposure
+│
+├── scripts/            # Lua and Bash workflows
+│   ├── experiments/
+│   └── visualization/
+│
+├── tests/              # Unit and convergence tests
+│   └── harmonic/
+│
+└── README.md
+```
 
 
 
